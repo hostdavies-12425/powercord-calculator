@@ -7,7 +7,7 @@ class Calculator extends Plugin {
 			command: "calc",
 			description: "Calculate your query",
 			usage: "{query} your query here!",
-			execustor: (args) => ({
+			executor: (args) => ({
 				send: false,
 				result: this.doMath(args.join(" ")),
 			}),
